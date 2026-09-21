@@ -185,3 +185,6 @@ img, svg { display: block; max-width: 100%; }
 
 /* Portrait photos get a tall frame */
 .card.tall { aspect-ratio: 3 / 4; }
+
+/* One wide photo spans the full width under the columns */
+.card.wide { grid-column: 1 / -1; aspect-ratio: 21 / 9; }
