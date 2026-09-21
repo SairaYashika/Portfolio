@@ -24,7 +24,7 @@ The nav has only `Work` and `About`. `Archive` and `Contact` were removed on pur
 - **Paths are relative** (`../styles.css`, `projects/...`) so the site works both at a domain root and under `/Portfolio/` on GitHub Pages. Never use root-absolute paths like `/styles.css`.
 - **Every page repeats the same header** (brand + Work / About). When you add or rename a page, update the nav on all pages and set `aria-current="page"` on the active link.
 - **Design tokens** live in `:root` at the top of `styles.css` (colours, fonts, gutter, gap, radius). Change them there, not inline.
-- **Fonts:** Newsreader (serif, headings, italic for section titles) and Inter (UI/body), plus Comfortaa (500) only for the `Soyun` brand name and the `Work` / `About` nav in the header, loaded from Google Fonts in each page's `<head>`. Keep that `<link>` identical across pages.
+- **Fonts:** Newsreader (serif, headings) and Inter (UI/body), plus Comfortaa (500) only for the `Soyun` brand name, the `Work` / `About` nav and the About section titles (`Community`, `Creations`), loaded from Google Fonts in each page's `<head>`. Keep that `<link>` identical across pages.
 - **Look:** white background, black text, muted grey secondary text, lots of whitespace, large image tiles with 8px radius. No dark mode. Keep it minimal and editorial; avoid adding decoration.
 - **Landing tiles:** each `.tile` has a `--tint` colour used by the hover overlay (company name + discipline). Touch devices (`hover: none`) show the name in a `.caption` under the tile instead. Keep both in sync when editing a project's name or tags.
 - **About page** overrides `--gutter` through `body.about-page`, so header, body and footer align. New About-specific styles go in the "About page" section of `styles.css`.
