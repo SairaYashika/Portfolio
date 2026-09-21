@@ -10,7 +10,7 @@ A designer portfolio (product / UX / UI). Static site: plain HTML, CSS and JS, n
 
 ```
 index.html              Landing: hero + 2-column project grid (hover overlay)
-about.html              About: intro, one "Soyuns" photo gallery (three staggered columns of 4 photos each plus one full-width wide photo; columns have equal height so the block is a clean rectangle), footer with the copyright on the left and social icons on the right
+about.html              About: intro, one "Soyuns" photo gallery (three staggered columns of 4 photos each plus one full-width wide photo; columns have equal height so the block is a clean rectangle), the shared footer
 projects/*.html         One case study per project (medly-solar, pocket-saju, connai, qvest; each links to the next)
 images/                 Real project images (compress before adding)
 styles.css              All styles, shared by every page
@@ -22,7 +22,7 @@ The nav has only `Work` and `About`. `Archive` and `Contact` were removed on pur
 ## Conventions
 
 - **Paths are relative** (`../styles.css`, `projects/...`) so the site works both at a domain root and under `/Portfolio/` on GitHub Pages. Never use root-absolute paths like `/styles.css`.
-- **Every page repeats the same header** (brand + Work / About). When you add or rename a page, update the nav on all pages and set `aria-current="page"` on the active link.
+- **Every page repeats the same header** (brand + Work / About) **and the same footer** (`© year Soyun` on the left, the four social icons on the right, hairline above). Change the footer on all pages together. When you add or rename a page, update the nav on all pages and set `aria-current="page"` on the active link.
 - **Design tokens** live in `:root` at the top of `styles.css` (colours, fonts, gutter, gap, radius). Change them there, not inline.
 - **Fonts:** Newsreader (serif, headings) and Inter (UI/body), plus Comfortaa (500) only for the `Soyun` brand name, the `Work` / `About` nav and the landing headline and the About gallery title (`Soyuns`), loaded from Google Fonts in each page's `<head>`. Keep that `<link>` identical across pages.
 - **Look:** white background, black text, muted grey secondary text, lots of whitespace, large image tiles with 8px radius. No dark mode. Keep it minimal and editorial; avoid adding decoration.

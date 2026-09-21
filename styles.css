@@ -90,12 +90,18 @@ img, svg { display: block; max-width: 100%; }
   .item { display: block; }
 }
 
-/* Footer */
-.site-footer { padding: clamp(56px, 6vw, 90px) 0 48px; }
-.socials { display: flex; gap: 22px; align-items: center; }
+/* Footer (identical on every page) */
+.site-footer { border-top: 1px solid var(--line); margin-top: clamp(32px, 5vw, 64px); padding: 28px 0 40px; color: var(--muted); font-size: 13px; }
+.site-footer .row { display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap; }
+.site-footer a:hover { color: var(--ink); }
+.socials { display: flex; gap: 14px; align-items: center; }
 .socials a { display: inline-flex; padding: 4px; margin: -4px; }
-.socials svg { width: 16px; height: 16px; stroke: var(--ink); fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
-.copy { margin-top: 22px; font-size: 12px; font-weight: 500; text-transform: uppercase; letter-spacing: .01em; }
+.socials svg { width: 16px; height: 16px; stroke: var(--muted); fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.socials a:hover svg { stroke: var(--ink); }
+@media (max-width: 700px) {
+  .site-footer .row { flex-direction: column; gap: 14px; }
+  .socials { justify-content: center; }
+}
 
 /* Case study */
 .cs-hero { padding: clamp(40px, 7vw, 96px) 0 32px; }
@@ -166,16 +172,6 @@ img, svg { display: block; max-width: 100%; }
 }
 
 /* About footer */
-.footer-about { border-top: 1px solid var(--line); margin-top: clamp(32px, 5vw, 64px); padding: 28px 0 40px; color: var(--muted); font-size: 13px; }
-.footer-about .row { display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap; }
-@media (max-width: 700px) {
-  .footer-about .row { flex-direction: column; gap: 14px; }
-  .footer-about .socials { justify-content: center; }
-}
-.footer-about .socials { gap: 14px; }
-.footer-about .socials svg { stroke: var(--muted); }
-.footer-about .socials a:hover svg { stroke: var(--ink); }
-.footer-about a:hover { color: var(--ink); }
 
 .cs-hero .tags-line { font-size: 14px; font-weight: 500; margin-bottom: 14px; }
 
