@@ -37,7 +37,10 @@ img, svg { display: block; max-width: 100%; }
   display: flex; justify-content: space-between; align-items: center;
   padding-top: 44px; padding-bottom: 20px;
 }
-.brand { font-family: "Comfortaa", var(--sans); font-weight: 500; font-size: 18px; letter-spacing: 0; }
+.brand { position: relative; padding-left: .95em; font-family: "Comfortaa", var(--sans); font-weight: 500; font-size: 18px; letter-spacing: 0; }
+/* The 4a sun mark, turned 45deg counter-clockwise, sits at the upper left of the wordmark, as in the design reference:
+   its stroke box starts 17.9px left of / 13.2px above the S (at 18px type) and its left edge is the page's left edge */
+.brand-logo { position: absolute; left: -.103em; top: -.69em; width: 1.86em; height: auto; transform: rotate(-45deg); transform-origin: 50% 94%; pointer-events: none; }
 .nav { display: flex; gap: 22px; font-family: "Comfortaa", var(--sans); font-weight: 500; font-size: 14px; }
 .nav a { color: var(--muted); transition: color .2s; }
 .nav a:hover, .nav a[aria-current="page"] { color: var(--ink); }
