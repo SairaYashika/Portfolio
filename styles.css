@@ -181,10 +181,6 @@ img, svg { display: block; max-width: 100%; }
   .card.photo > img { aspect-ratio: var(--ar); width: min(92cqw, calc(86cqh * var(--ar))); height: auto; max-width: none; }
 }
 
-/* Images that keep their own aspect ratio; extra width is filled with the image's background colour */
-.tile .art.fit { background: var(--fit-bg, var(--surface)); }
-.tile .art.fit > img { object-fit: contain; }
-.cs-cover[style*="--fit-bg"] { background: var(--fit-bg); }
 
 /* Portrait photos get a tall frame */
 .card.tall { aspect-ratio: 3 / 4; }
