@@ -17,7 +17,7 @@ styles.css              All styles, shared by every page
 script.js               Footer year, footer local time (About), scroll reveal
 ```
 
-The nav has only `Work` and `About`. `Archive` and `Contact` were removed on purpose; don't add them back. Contact is reached through the `Get in touch` button and the About footer email.
+The nav has only `Work` and `About`. `Archive` and `Contact` were removed on purpose; don't add them back. There is no contact button; visitors reach you through the footer icons (email, LinkedIn, ...) and the email in the About footer.
 
 ## Conventions
 

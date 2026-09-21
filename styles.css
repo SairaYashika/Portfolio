@@ -44,14 +44,6 @@ img, svg { display: block; max-width: 100%; }
   font-size: clamp(30px, 3.2vw, 44px); line-height: 1.22; letter-spacing: -0.005em;
   max-width: 25ch;
 }
-.status { margin-top: 28px; font-size: 14px; display: flex; align-items: center; gap: 6px; }
-.status .star { font-size: 12px; }
-.btn {
-  display: inline-block; margin-top: 24px;
-  background: var(--ink); color: #fff; font-size: 14px; font-weight: 500;
-  padding: 10px 14px; border-radius: 8px; transition: opacity .2s;
-}
-.btn:hover { opacity: .8; }
 
 /* Project grid */
 .grid { display: grid; grid-template-columns: 1fr; gap: var(--gap); }
