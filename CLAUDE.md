@@ -3,7 +3,7 @@
 A designer portfolio (product / UX / UI). Static site: plain HTML, CSS and JS, no build step, no dependencies.
 
 - Repo: https://github.com/SairaYashika/Portfolio.git
-- Deploys: pushing to `main` should auto-deploy (Netlify / Cloudflare Pages / Vercel connected to the repo, publish directory `/`).
+- Deploys: GitHub Pages serves `main` from the repo root at https://sairayashika.github.io/Portfolio/ (moved from Netlify, whose auto-deploys stopped after `f28886c`). `.nojekyll` keeps GitHub from running Jekyll. Pages has a soft limit of about 10 builds per hour, so if many pushes are queued, batch them.
 - The site's owner reads and writes Korean; write site copy in English, talk to the owner in Korean unless they write in English.
 
 ## Structure
