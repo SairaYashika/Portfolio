@@ -32,7 +32,7 @@ img, svg { display: block; max-width: 100%; }
   display: flex; justify-content: space-between; align-items: center;
   padding-top: 44px; padding-bottom: 20px;
 }
-.brand { font-family: var(--serif); font-size: 18px; letter-spacing: 0.01em; }
+.brand { font-family: "Comfortaa", var(--sans); font-weight: 500; font-size: 18px; letter-spacing: 0; }
 .nav { display: flex; gap: 22px; font-size: 14px; }
 .nav a { color: var(--muted); transition: color .2s; }
 .nav a:hover, .nav a[aria-current="page"] { color: var(--ink); }
