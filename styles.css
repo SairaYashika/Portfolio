@@ -173,6 +173,7 @@ img, svg { display: block; max-width: 100%; }
 .footer-about .socials svg { stroke: var(--muted); }
 .footer-about .socials a:hover svg { stroke: var(--ink); }
 .footer-about a:hover { color: var(--ink); }
+.footer-about .mail-emoji { font-size: 16px; line-height: 1; }
 
 .cs-hero .tags-line { font-size: 14px; font-weight: 500; margin-bottom: 14px; }
 
