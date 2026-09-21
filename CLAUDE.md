@@ -16,12 +16,12 @@ styles.css              All styles, shared by every page
 script.js               Footer year, footer local time (About), scroll reveal
 ```
 
-There is no Archive page yet. The `Archive` nav link is `href="#"` on purpose; don't invent a page for it.
+The nav has only `Work` and `About`. `Archive` and `Contact` were removed on purpose; don't add them back. Contact is reached through the `Get in touch` button and the About footer email.
 
 ## Conventions
 
 - **Paths are relative** (`../styles.css`, `projects/...`) so the site works both at a domain root and under `/Portfolio/` on GitHub Pages. Never use root-absolute paths like `/styles.css`.
-- **Every page repeats the same header** (brand + Work / Archive / About / Contact). When you add or rename a page, update the nav on all pages and set `aria-current="page"` on the active link.
+- **Every page repeats the same header** (brand + Work / About). When you add or rename a page, update the nav on all pages and set `aria-current="page"` on the active link.
 - **Design tokens** live in `:root` at the top of `styles.css` (colours, fonts, gutter, gap, radius). Change them there, not inline.
 - **Fonts:** Newsreader (serif, headings, italic for section titles) and Inter (UI/body), loaded from Google Fonts in each page's `<head>`. Keep that `<link>` identical across pages.
 - **Look:** white background, black text, muted grey secondary text, lots of whitespace, large image tiles with 8px radius. No dark mode. Keep it minimal and editorial; avoid adding decoration.
