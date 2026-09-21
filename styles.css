@@ -167,13 +167,12 @@ img, svg { display: block; max-width: 100%; }
 
 /* About footer */
 .footer-about { border-top: 1px solid var(--line); margin-top: clamp(32px, 5vw, 64px); padding: 28px 0 40px; color: var(--muted); font-size: 13px; }
-.footer-about .row { display: flex; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
+.footer-about .row { display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap; }
 .footer-about .row > div + div { text-align: right; }
-.footer-about .socials { justify-content: flex-end; margin-top: 8px; gap: 14px; }
+.footer-about .socials { justify-content: flex-end; gap: 14px; }
 .footer-about .socials svg { stroke: var(--muted); }
 .footer-about .socials a:hover svg { stroke: var(--ink); }
 .footer-about a:hover { color: var(--ink); }
-.footer-about .mail-emoji { font-size: 16px; line-height: 1; }
 
 .cs-hero .tags-line { font-size: 14px; font-weight: 500; margin-bottom: 14px; }
 
