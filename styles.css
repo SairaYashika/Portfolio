@@ -144,23 +144,6 @@ img, svg { display: block; max-width: 100%; }
   background: linear-gradient(var(--angle, 135deg), var(--a, #f7f6f3), var(--b, var(--a, #f7f6f3)));
   display: grid; place-items: center;
 }
-.card > .ph { position: relative; }
-.card .img { position: absolute; inset: 0; background: linear-gradient(160deg, var(--i1, #9ab), var(--i2, #567)); }
-
-/* Placeholder shapes: swap each for your own <img> */
-.ph.polaroid { width: 34%; aspect-ratio: 1 / 1.08; background: #fff; padding: 5% 5% 15%; transform: rotate(-3deg); box-shadow: 0 6px 18px rgba(0,0,0,.14); }
-.ph.polaroid .img { inset: 5% 5% 15%; }
-.ph.phone { width: 31%; aspect-ratio: 9 / 16; border-radius: 3px; overflow: hidden; box-shadow: 0 6px 18px rgba(0,0,0,.14); }
-.ph.screen { width: 76%; aspect-ratio: 16 / 9.4; background: #121212; border-radius: 4px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,.18); }
-.ph.screen::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 22%; background: #1c1c1c; }
-.ph.screen .img { inset: 8% 12% 8% 34%; }
-.ph.browser { width: 78%; aspect-ratio: 16 / 10; background: #fff; border-radius: 4px; box-shadow: 0 8px 24px rgba(0,0,0,.14); overflow: hidden; }
-.ph.browser::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 9%; background: #f1f1f1; }
-.ph.browser .img { inset: 20% 38% 12% 8%; }
-.ph.browser::after { content: ""; position: absolute; left: 66%; right: 6%; top: 20%; bottom: 12%; background: repeating-linear-gradient(#e4e4e4 0 4px, transparent 4px 12px); }
-.ph.deck { width: 74%; aspect-ratio: 16 / 9.6; background: #161616; border-radius: 4px; transform: rotate(-3deg); box-shadow: 0 8px 22px rgba(0,0,0,.25); overflow: hidden; }
-.ph.deck .img { inset: 34% 6% 8% 6%; background: repeating-linear-gradient(90deg, #e9e28a 0 12%, transparent 12% 15%, #fff 15% 27%, transparent 27% 30%); opacity: .9; }
-.card.full .img { inset: 0; border-radius: 0; }
 
 /* About footer */
 .footer-about { border-top: 1px solid var(--line); margin-top: clamp(32px, 5vw, 64px); padding: 28px 0 40px; color: var(--muted); font-size: 13px; }

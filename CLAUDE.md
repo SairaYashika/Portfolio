@@ -10,7 +10,7 @@ A designer portfolio (product / UX / UI). Static site: plain HTML, CSS and JS, n
 
 ```
 index.html              Landing: hero + 2-column project grid (hover overlay)
-about.html              About: intro, Community / Creations galleries, footer with local time
+about.html              About: intro, one "Soyuns" photo gallery, footer with local time
 projects/*.html         One case study per project (medly-solar, pocket-saju, connai, qvest; each links to the next)
 images/                 Real project images (compress before adding)
 styles.css              All styles, shared by every page
@@ -24,7 +24,7 @@ The nav has only `Work` and `About`. `Archive` and `Contact` were removed on pur
 - **Paths are relative** (`../styles.css`, `projects/...`) so the site works both at a domain root and under `/Portfolio/` on GitHub Pages. Never use root-absolute paths like `/styles.css`.
 - **Every page repeats the same header** (brand + Work / About). When you add or rename a page, update the nav on all pages and set `aria-current="page"` on the active link.
 - **Design tokens** live in `:root` at the top of `styles.css` (colours, fonts, gutter, gap, radius). Change them there, not inline.
-- **Fonts:** Newsreader (serif, headings) and Inter (UI/body), plus Comfortaa (500) only for the `Soyun` brand name, the `Work` / `About` nav and the landing headline and the About section titles (`Community`, `Creations`), loaded from Google Fonts in each page's `<head>`. Keep that `<link>` identical across pages.
+- **Fonts:** Newsreader (serif, headings) and Inter (UI/body), plus Comfortaa (500) only for the `Soyun` brand name, the `Work` / `About` nav and the landing headline and the About gallery title (`Soyuns`), loaded from Google Fonts in each page's `<head>`. Keep that `<link>` identical across pages.
 - **Look:** white background, black text, muted grey secondary text, lots of whitespace, large image tiles with 8px radius. No dark mode. Keep it minimal and editorial; avoid adding decoration.
 - **Landing tiles:** each `.tile` has a `--tint` colour used by the hover overlay (company name + discipline). Touch devices (`hover: none`) show the name in a `.caption` under the tile instead. Keep both in sync when editing a project's name or tags.
 - **About page** overrides `--gutter` through `body.about-page`, so header, body and footer align. New About-specific styles go in the "About page" section of `styles.css`.
@@ -38,7 +38,7 @@ Most content is still placeholder. Placeholders are written in `[square brackets
 - Case-study copy for Medly-SOLAR, QVest and CONNAÎ was adapted from the owner's old portfolio (https://soyunoh.webflow.io/). Pocket Saju has no source yet and is still placeholder. Keep the case-study layout as it is; only change the content.
 - Replace placeholders only with content the owner provides. Don't invent real facts, names, metrics or company details.
 - Don't use real companies' logos, names or imagery as placeholders.
-- When real images arrive, put them in `images/`, compress them, and swap the placeholder element (`.art` SVG, `.ph` in About cards, `.cs-cover` / `.cs-figure` in case studies) for an `<img>` with `alt` text, `width`/`height` and `loading="lazy"` (not on the first visible image).
+- When real images arrive, put them in `images/`, compress them, and swap the placeholder element (`.art` SVG in tiles, `.cs-cover` / `.cs-figure` in case studies; About photos are already real `.card.photo` images) for an `<img>` with `alt` text, `width`/`height` and `loading="lazy"` (not on the first visible image).
 
 Known values still to replace: social links (`href="#"`), the footer city on About (`#local-time`, currently `Asia/Seoul` / `Seoul`), all case-study facts and copy.
 
@@ -48,4 +48,4 @@ Known values still to replace: social links (`href="#"`), the footer city on Abo
 - Check at phone width (about 375px) and desktop width (1440px). There should be no horizontal scroll.
 - Check every link you touched, including the `Next project` chain in case studies.
 - The owner has said: after every change, commit and push right away without asking. Pushing publishes the site (Netlify redeploys on push), so still keep changes small and check them locally first.
-- Commit messages: short, imperative, describe the visible change (e.g. `About: add Creations gallery`).
+- Commit messages: short, imperative, describe the visible change (e.g. `About: add gallery photos`).
