@@ -137,6 +137,9 @@ img, svg { display: block; max-width: 100%; }
 .cards { display: grid; grid-template-columns: 1fr; gap: 13px; align-items: start; }
 @media (min-width: 600px) { .cards { grid-template-columns: 1fr 1fr; } }
 @media (min-width: 960px) { .cards { grid-template-columns: repeat(3, 1fr); } }
+/* Three staggered columns of equal height, so the block outlines a clean rectangle */
+.cards > .col { display: contents; }
+@media (min-width: 960px) { .cards > .col { display: flex; flex-direction: column; gap: 13px; } }
 
 .card {
   position: relative; aspect-ratio: 4 / 3; overflow: hidden; border-radius: 4px;
