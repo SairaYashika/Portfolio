@@ -27,7 +27,7 @@ The nav has only `Work` and `About`. `Archive` and `Contact` were removed on pur
 - **Fonts:** Newsreader (serif, headings) and Inter (UI/body), plus Comfortaa (500) only for the `Soyun` brand name, the `Work` / `About` nav and the landing headline and the About gallery title (`Soyuns`), loaded from Google Fonts in each page's `<head>`. Keep that `<link>` identical across pages.
 - **Look:** white background, black text, muted grey secondary text, lots of whitespace, large image tiles with 8px radius. No dark mode. Keep it minimal and editorial; avoid adding decoration.
 - **Landing tiles:** each `.tile` has a `--tint` colour used by the hover overlay (company name + discipline). Touch devices (`hover: none`) show the name in a `.caption` under the tile instead. Keep both in sync when editing a project's name or tags.
-- **About page** overrides `--gutter` through `body.about-page`, so header, body and footer align. New About-specific styles go in the "About page" section of `styles.css`.
+- **Page width is shared:** every page (landing, About, case studies) uses the same `--gutter` (12vw on desktop >= 960px, max 260px; 10.5vw below that) and `--gap` (13px) from `:root`, so the header, content and footer line up across pages. Don't give a single page its own gutter. About-specific styles go in the "About page" section of `styles.css`.
 - **Accessibility:** keep `alt`/`aria-label` on images and placeholder art, visible focus styles, and the `prefers-reduced-motion` handling for `.reveal`.
 - Keep it dependency-free: no frameworks, bundlers or npm packages unless the owner asks.
 
