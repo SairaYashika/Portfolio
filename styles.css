@@ -139,7 +139,12 @@ img, svg { display: block; max-width: 100%; }
 @media (min-width: 960px) { .cards { grid-template-columns: repeat(3, 1fr); } }
 /* Three staggered columns of equal height, so the block outlines a clean rectangle */
 .cards > .col { display: contents; }
-@media (min-width: 960px) { .cards > .col { display: flex; flex-direction: column; gap: 13px; } }
+@media (min-width: 960px) {
+  .cards { align-items: stretch; }
+  .cards > .col { display: flex; flex-direction: column; gap: 13px; }
+  .cards > .col > .card { flex: 0.75 0 auto; }
+  .cards > .col > .card.tall { flex: 1.3333 0 auto; }
+}
 
 .card {
   position: relative; aspect-ratio: 4 / 3; overflow: hidden; border-radius: 4px;
@@ -166,7 +171,12 @@ img, svg { display: block; max-width: 100%; }
 .cs-cover.teal { background: #36c1d8; }
 
 /* Photo cards: show the whole photo, framed inside the card */
-.card.photo > img { position: absolute; inset: 0; margin: auto; height: 86%; width: auto; max-width: 86%; object-fit: cover; border-radius: 3px; box-shadow: 0 6px 18px rgba(0,0,0,.14); }
+.card.photo { container-type: size; }
+.card.photo > img { position: absolute; inset: 0; margin: auto; height: 86%; width: auto; max-width: 92%; object-fit: cover; border-radius: 3px; box-shadow: 0 6px 18px rgba(0,0,0,.14); }
+/* The photo keeps its own ratio and always fits inside whatever frame the column gives it */
+@supports (width: 1cqw) {
+  .card.photo > img { aspect-ratio: var(--ar); width: min(92cqw, calc(86cqh * var(--ar))); height: auto; max-width: none; }
+}
 
 /* Images that keep their own aspect ratio; extra width is filled with the image's background colour */
 .tile .art.fit { background: var(--fit-bg, var(--surface)); }
@@ -175,4 +185,3 @@ img, svg { display: block; max-width: 100%; }
 
 /* Portrait photos get a tall frame */
 .card.tall { aspect-ratio: 3 / 4; }
-.card.tall > img { max-width: 92%; }
