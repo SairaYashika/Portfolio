@@ -142,10 +142,11 @@ img, svg { display: block; max-width: 100%; }
 
 .intro { position: relative; padding: clamp(40px, 6vw, 84px) 0 clamp(40px, 5vw, 64px); }
 .intro::before, .intro::after {
-  content: ""; position: absolute; z-index: -1; pointer-events: none; border-radius: 50%; filter: blur(56px); opacity: .55;
+  content: ""; position: absolute; z-index: -1; pointer-events: none; border-radius: 50%; filter: blur(56px); opacity: 1;
 }
-.intro::before { left: 4%; top: 6%; width: 46%; height: 72%; background: radial-gradient(circle, #ffc9dc 0%, #ffe3d6 55%, transparent 75%); }
-.intro::after  { left: 40%; top: 20%; width: 42%; height: 66%; background: radial-gradient(circle, #cfe0ff 0%, #e9eaff 55%, transparent 75%); }
+/* Glow colours: #FEF5F5, and a much paler, translucent take on #63AE8C (#D8EBE2 = 216, 235, 226) */
+.intro::before { left: 4%; top: 6%; width: 46%; height: 72%; background: radial-gradient(circle, #FEF5F5 0%, rgba(254, 245, 245, .7) 55%, transparent 75%); }
+.intro::after  { left: 40%; top: 20%; width: 42%; height: 66%; background: radial-gradient(circle, rgba(216, 235, 226, .8) 0%, rgba(216, 235, 226, .45) 55%, transparent 75%); }
 .intro p { font-size: clamp(16px, 1.35vw, 19px); line-height: 1.45; max-width: 66ch; }
 .intro p + p { margin-top: 1.7em; }
 
