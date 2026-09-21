@@ -19,7 +19,7 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
 /* Mouse pointer: the sun mark (logo-1b), hotspot at its centre. Links keep the browser's pointing hand. */
-html { cursor: url("images/cursor-sun.svg") 18 18, auto; }
+html { cursor: url("images/cursor-sun.svg") 9 9, auto; }
 
 body {
   background: var(--bg);
