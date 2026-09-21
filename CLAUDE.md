@@ -11,7 +11,7 @@ A designer portfolio (product / UX / UI). Static site: plain HTML, CSS and JS, n
 ```
 index.html              Landing: hero + 2-column project grid (hover overlay)
 about.html              About: intro, Community / Creations galleries, footer with local time
-projects/*.html         One case study per project (medly-solar, company-two..four; each links to the next)
+projects/*.html         One case study per project (medly-solar, company-two, company-three, qvest; each links to the next)
 images/                 Real project images (compress before adding)
 styles.css              All styles, shared by every page
 script.js               Footer year, footer local time (About), scroll reveal
@@ -46,5 +46,5 @@ Known values still to replace: social links (`href="#"`), the footer city on Abo
 - Preview locally with `python3 -m http.server 4173` from this folder, then open `http://localhost:4173`. Opening files with `file://` also works, but scroll-reveal and some checks behave more reliably over http.
 - Check at phone width (about 375px) and desktop width (1440px). There should be no horizontal scroll.
 - Check every link you touched, including the `Next project` chain in case studies.
-- Only commit or push when the owner asks. Pushing publishes the site.
+- The owner has said: after every change, commit and push right away without asking. Pushing publishes the site (Netlify redeploys on push), so still keep changes small and check them locally first.
 - Commit messages: short, imperative, describe the visible change (e.g. `About: add Creations gallery`).

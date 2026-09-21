@@ -181,3 +181,8 @@ img, svg { display: block; max-width: 100%; }
 
 /* Photo cards: show the whole photo, framed inside the card */
 .card.photo > img { position: absolute; inset: 0; margin: auto; height: 86%; width: auto; max-width: 86%; object-fit: cover; border-radius: 3px; box-shadow: 0 6px 18px rgba(0,0,0,.14); }
+
+/* Images that keep their own aspect ratio; extra width is filled with the image's background colour */
+.tile .art.fit { background: var(--fit-bg, var(--surface)); }
+.tile .art.fit > img { object-fit: contain; }
+.cs-cover[style*="--fit-bg"] { background: var(--fit-bg); }
