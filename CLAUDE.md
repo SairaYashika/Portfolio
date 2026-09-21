@@ -32,13 +32,13 @@ The nav has only `Work` and `About`. `Archive` and `Contact` were removed on pur
 
 ## Placeholders
 
-Most content is still placeholder. Placeholders are written in `[square brackets]` (e.g. `[Company A]`, `[X%]`) or as obvious generic text (`Company One`, `hello@example.com`). The artwork in tiles, galleries and case studies is inline SVG / CSS shapes standing in for real images.
+Most content is still placeholder. Placeholders are written in `[square brackets]` (e.g. `[Company A]`, `[X%]`) or as obvious generic text (`Company One`). The artwork in tiles, galleries and case studies is inline SVG / CSS shapes standing in for real images.
 
 - Replace placeholders only with content the owner provides. Don't invent real facts, names, metrics or company details.
 - Don't use real companies' logos, names or imagery as placeholders.
 - When real images arrive, put them in `images/`, compress them, and swap the placeholder element (`.art` SVG, `.ph` in About cards, `.cs-cover` / `.cs-figure` in case studies) for an `<img>` with `alt` text, `width`/`height` and `loading="lazy"` (not on the first visible image).
 
-Known values still to replace: email `hello@example.com`, social links (`href="#"`), the footer city on About (`#local-time`, currently `Asia/Seoul` / `Seoul`), all case-study facts and copy.
+Known values still to replace: social links (`href="#"`), the footer city on About (`#local-time`, currently `Asia/Seoul` / `Seoul`), all case-study facts and copy.
 
 ## Working on it
 
