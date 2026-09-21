@@ -10,11 +10,11 @@ A designer portfolio (product / UX / UI). Static site: plain HTML, CSS and JS, n
 
 ```
 index.html              Landing: hero + 2-column project grid (hover overlay)
-about.html              About: intro, one "Soyuns" photo gallery (three staggered columns of 4 photos each plus one full-width wide photo; columns have equal height so the block is a clean rectangle), footer with local time, centred copyright and icons
+about.html              About: intro, one "Soyuns" photo gallery (three staggered columns of 4 photos each plus one full-width wide photo; columns have equal height so the block is a clean rectangle), footer with the copyright on the left and social icons on the right
 projects/*.html         One case study per project (medly-solar, pocket-saju, connai, qvest; each links to the next)
 images/                 Real project images (compress before adding)
 styles.css              All styles, shared by every page
-script.js               Footer year, footer local time (About), scroll reveal
+script.js               Footer year, scroll reveal
 ```
 
 The nav has only `Work` and `About`. `Archive` and `Contact` were removed on purpose; don't add them back. There is no contact button; visitors reach you through the footer icons (email, LinkedIn, ...) and the email icon in the About footer.
@@ -41,7 +41,7 @@ Most content is still placeholder. Placeholders are written in `[square brackets
 - Don't use real companies' logos, names or imagery as placeholders.
 - When real images arrive, put them in `images/`, compress them, and swap the placeholder element (`.art` SVG in tiles, `.cs-cover` / `.cs-figure` in case studies; About photos are already real `.card.photo` images) for an `<img>` with `alt` text, `width`/`height` and `loading="lazy"` (not on the first visible image).
 
-The About footer shows the time in Los Gatos, CA (`#local-time`, `America/Los_Angeles`). Known values still to replace: social links that are still `href="#"` (Instagram), all case-study facts and copy.
+Known values still to replace: social links that are still `href="#"` (Instagram), all case-study facts and copy.
 
 ## Working on it
 
