@@ -17,12 +17,12 @@ styles.css              All styles, shared by every page
 script.js               Footer year, scroll reveal
 ```
 
-The nav has only `Work` and `About`. `Archive` and `Contact` were removed on purpose; don't add them back. There is no contact button; visitors reach you through the footer icons (email, LinkedIn, ...) and the email icon in the About footer.
+The nav is `Work`, `About` and `Resume`. `Archive` and `Contact` were removed on purpose; don't add them back. The `Resume` link is `href="#"` until the owner shares what it should open. There is no contact button; visitors reach you through the footer icons (email, LinkedIn, ...) and the email icon in the About footer.
 
 ## Conventions
 
 - **Paths are relative** (`../styles.css`, `projects/...`) so the site works both at a domain root and under `/Portfolio/` on GitHub Pages. Never use root-absolute paths like `/styles.css`.
-- **Every page repeats the same header** (brand + Work / About) **and the same footer** (`© year Soyun` on the left, the four social icons on the right, hairline above). Change the footer on all pages together. When you add or rename a page, update the nav on all pages and set `aria-current="page"` on the active link.
+- **Every page repeats the same header** (brand + Work / About / Resume) **and the same footer** (`© year Soyun` on the left, the four social icons on the right, hairline above). Change the footer on all pages together. When you add or rename a page, update the nav on all pages and set `aria-current="page"` on the active link.
 - **Design tokens** live in `:root` at the top of `styles.css` (colours, fonts, gutter, gap, radius). Change them there, not inline.
 - **Fonts:** Newsreader (serif, headings) and Inter (UI/body), plus Comfortaa (500) only for the `Soyun` brand name, the `Work` / `About` nav and the landing headline and the About gallery title (`Soyuns`), loaded from Google Fonts in each page's `<head>`. Keep that `<link>` identical across pages.
 - **Look:** white background, black text, muted grey secondary text, lots of whitespace, large image tiles with 8px radius. No dark mode. Keep it minimal and editorial; avoid adding decoration.
