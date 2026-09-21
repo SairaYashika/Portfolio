@@ -178,3 +178,6 @@ img, svg { display: block; max-width: 100%; }
 .tile .art > img { width: 100%; height: 100%; object-fit: cover; }
 .cs-cover > img { width: 100%; height: 100%; object-fit: contain; }
 .cs-cover.teal { background: #36c1d8; }
+
+/* Photo cards: show the whole photo, framed inside the card */
+.card.photo > img { position: absolute; inset: 0; margin: auto; height: 86%; width: auto; max-width: 86%; object-fit: cover; border-radius: 3px; box-shadow: 0 6px 18px rgba(0,0,0,.14); }
