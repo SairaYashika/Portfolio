@@ -181,3 +181,8 @@ img, svg { display: block; max-width: 100%; }
 .footer-about .note { text-align: center; margin-top: 40px; font-size: 12px; }
 
 .cs-hero .tags-line { font-size: 14px; font-weight: 500; margin-bottom: 14px; }
+
+/* Real project images */
+.tile .art > img { width: 100%; height: 100%; object-fit: cover; }
+.cs-cover > img { width: 100%; height: 100%; object-fit: contain; }
+.cs-cover.teal { background: #36c1d8; }

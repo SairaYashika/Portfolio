@@ -11,7 +11,8 @@ A designer portfolio (product / UX / UI). Static site: plain HTML, CSS and JS, n
 ```
 index.html              Landing: hero + 2-column project grid (hover overlay)
 about.html              About: intro, Community / Creations galleries, footer with local time
-projects/company-*.html One case study per project (one-to-four, each links to the next)
+projects/*.html         One case study per project (medly-solar, company-two..four; each links to the next)
+images/                 Real project images (compress before adding)
 styles.css              All styles, shared by every page
 script.js               Footer year, footer local time (About), scroll reveal
 ```
@@ -32,7 +33,7 @@ The nav has only `Work` and `About`. `Archive` and `Contact` were removed on pur
 
 ## Placeholders
 
-Most content is still placeholder. Placeholders are written in `[square brackets]` (e.g. `[Company A]`, `[X%]`) or as obvious generic text (`Company One`). The artwork in tiles, galleries and case studies is inline SVG / CSS shapes standing in for real images.
+Most content is still placeholder. Placeholders are written in `[square brackets]` (e.g. `[Company A]`, `[X%]`) or as obvious generic text (`Company Two`). The artwork in tiles, galleries and case studies is inline SVG / CSS shapes standing in for real images.
 
 - Replace placeholders only with content the owner provides. Don't invent real facts, names, metrics or company details.
 - Don't use real companies' logos, names or imagery as placeholders.
