@@ -10,7 +10,7 @@ A designer portfolio (product / UX / UI). Static site: plain HTML, CSS and JS, n
 
 ```
 index.html              Landing: hero + 2-column project grid (hover overlay)
-about.html              About: intro, one "Soyuns" photo gallery, footer with local time
+about.html              About: intro, one "Soyuns" photo gallery (landscape row, then tall-frame portrait row), footer with local time
 projects/*.html         One case study per project (medly-solar, pocket-saju, connai, qvest; each links to the next)
 images/                 Real project images (compress before adding)
 styles.css              All styles, shared by every page
